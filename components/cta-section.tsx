@@ -4,14 +4,19 @@ import { useState } from "react"
 import { ArrowRight, Check } from "lucide-react"
 import { useI18n } from "@/lib/i18n-context"
 
+const copyStringToClipboard = async (stringToCopy: string) => {
+  return await navigator.clipboard.writeText(stringToCopy)
+}
+
 export function CTASection() {
-  const [email, setEmail] = useState("")
+  const [email, setEmail] = useState("locdinsolutions@gmail.com")
   const [submitted, setSubmitted] = useState(false)
   const { t } = useI18n()
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (email) {
+      copyStringToClipboard(email)
       setSubmitted(true)
     }
   }
@@ -42,6 +47,7 @@ export function CTASection() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                disabled
                 className="flex-1 px-4 py-3 rounded-md bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
               />
               <button

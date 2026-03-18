@@ -115,8 +115,8 @@ export const translations = {
       title: "Pronto para construir algo extraordinário?",
       description: "Conte-nos sobre seu projeto. Em 48h você terá uma análise preliminar, estimativa de prazo e proposta comercial. Sem compromisso.",
       placeholder: "Seu email corporativo",
-      button: "Solicitar Proposta",
-      success: "Recebido! Nossa equipe entrará em contato em até 48h.",
+      button: "Copiar Email",
+      success: "Após o contato, Nossa equipe entrará em contato em até 48h.",
       noSpam: "Resposta garantida",
       activeCommunity: "Análise gratuita",
       exclusiveContent: "Sem compromisso"
@@ -253,8 +253,8 @@ export const translations = {
       title: "Ready to build something extraordinary?",
       description: "Tell us about your project. Within 48h you'll have a preliminary analysis, timeline estimate, and commercial proposal. No commitment required.",
       placeholder: "Your business email",
-      button: "Request Proposal",
-      success: "Received! Our team will contact you within 48h.",
+      button: "Copy Email",
+      success: "Once you contact us, our team will contact you within 48h.",
       noSpam: "Guaranteed response",
       activeCommunity: "Free analysis",
       exclusiveContent: "No commitment"
